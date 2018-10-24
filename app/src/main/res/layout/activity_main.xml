@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:orientation="vertical"
+        android:paddingLeft="70dp"
+        android:paddingTop="70dp"
+        android:paddingRight="70dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+
+        <TextView
+            android:id="@+id/textView_login"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="120dp"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#ffffff">
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hapticFeedbackEnabled="true"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHint="#ffffff"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_pressed"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_pressed" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#ffffff">
+
+            <EditText
+                android:id="@+id/editText2_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingTop="20dp"
+                android:singleLine="?android:attr/windowOverscan"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHint="#ffffff"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_pressed"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_pressed" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/loginbttn"
+            android:layout_width="163dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_btn"
+            android:text="Login"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/textView_registerHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="text_msg"
+            android:paddingTop="15dp"
+            android:text="New User?? Register Here"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
